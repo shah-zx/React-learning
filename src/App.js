@@ -26,6 +26,11 @@ import Columns from './components/Columns';
 import Purecomponents from './components/Purecomponents'
 import Parentcomp from './components/Parentcomp';
 import MemoComp from './components/MemoComp'
+import RefsDemo from './components/RefsDemo';
+import Focusinput from './components/Focusinput'
+import FRparentinput from './components/FRparentinput';
+import Portaldemo from './components/Portaldemo'
+import Practice1 from './components/Practice1';
 function App() {
   return (
     <div className="App">
@@ -41,8 +46,8 @@ function App() {
       <Ayiye naam="hamza" younger="Brother" /> */}
       {/* <Greet name="shahnawaz" heroName="Batman" /> */}
       {/* <Greet /> */}
-      {/* <Welcome name = "Hamza" heroName="Superman"/>
-      <Message />
+       <Welcome name = "Hamza" heroName="Superman"/>
+      {/* <Message />
       <Thought />
       <Counter /> */}
       {/* <ParentComponent /> */}
@@ -60,7 +65,13 @@ function App() {
       {/* <Fragments /> */}
       {/* <Tables /> */}
       {/* <Parentcomp /> */}
-      <MemoComp />
+      {/* <MemoComp /> */}
+      <Practice1 naam = "romeo" herokanaam = "billu"/>
+      <Hello />
+      <RefsDemo />
+      <Focusinput />
+      <FRparentinput />
+      <Portaldemo />
     </div>
   );
 }
