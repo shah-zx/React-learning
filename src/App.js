@@ -31,6 +31,7 @@ import Focusinput from './components/Focusinput'
 import FRparentinput from './components/FRparentinput';
 import Portaldemo from './components/Portaldemo'
 import Practice1 from './components/Practice1';
+import Practice2 from './components/Practice2';
 function App() {
   return (
     <div className="App">
@@ -67,11 +68,12 @@ function App() {
       {/* <Parentcomp /> */}
       {/* <MemoComp /> */}
       <Practice1 naam = "romeo" herokanaam = "billu"/>
-      <Hello />
+      {/* <Hello />
       <RefsDemo />
       <Focusinput />
       <FRparentinput />
-      <Portaldemo />
+      <Portaldemo /> */}
+      <Practice2 />
     </div>
   );
 }
