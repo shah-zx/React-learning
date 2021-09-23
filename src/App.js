@@ -32,6 +32,8 @@ import FRparentinput from './components/FRparentinput';
 import Portaldemo from './components/Portaldemo'
 import Practice1 from './components/Practice1';
 import Practice2 from './components/Practice2';
+import Clickcounter from './components/Clickcounter';
+import HoverCount from './components/HoverCount'
 function App() {
   return (
     <div className="App">
@@ -74,6 +76,8 @@ function App() {
       <FRparentinput />
       <Portaldemo /> */}
       <Practice2 />
+      <Clickcounter />
+      <HoverCount />
     </div>
   );
 }
