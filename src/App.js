@@ -34,6 +34,7 @@ import Practice1 from './components/Practice1';
 import Practice2 from './components/Practice2';
 import Clickcounter from './components/Clickcounter';
 import HoverCount from './components/HoverCount'
+import Componentone from './components/Componentone'
 function App() {
   return (
     <div className="App">
@@ -78,6 +79,7 @@ function App() {
       <Practice2 />
       <Clickcounter />
       <HoverCount />
+      {/* <Componentone /> */}
     </div>
   );
 }

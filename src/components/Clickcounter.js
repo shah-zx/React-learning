@@ -1,32 +1,24 @@
 // Here we will make a click counter //
 
 import React, { Component } from 'react'
-
+import UpdatedComponent from './withCounter'
 class Clickcounter extends Component {
-    constructor(props) {
-        super(props)
 
-        this.state = {
-            count: 0
-        }
-    }
-    incrementCount = () => {
-        this.setState(prevState => {
-            return { count: prevState.count + 1 }
-
-        }
-
-        )
-    }
 
     render() {
-        const { count } = this.state
+        const { count, incrementCount } = this.props
         return (
-            <div>
-                <button onClick={this.incrementCount}>Clicked {count} times</button>
-            </div>
+
+            <button onClick={incrementCount}>Clicked {count} times</button>
+
         )
     }
 }
 
-export default Clickcounter
+export default UpdatedComponent(Clickcounter)
+
+// const newComponent = higherOrderComponent(OriginalComponent) // 
+// const EnhancedComponent = higherOrderComponent(OriginalComponent)
+// For example = const IronMan = suit(TonyStark) //
+// The above is the way higherOrderComponent works //
+
