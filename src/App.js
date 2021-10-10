@@ -35,6 +35,11 @@ import Practice2 from './components/Practice2';
 import Clickcounter from './components/Clickcounter';
 import HoverCount from './components/HoverCount'
 import Componentone from './components/Componentone'
+import ClickcounterTwo from './components/ClickcounterTwo';
+import HovercounterTwo from './components/HovercounterTwo'
+import Hovering from './components/Hovering';
+import User from './components/User'
+import Counterforcountandhover from './components/Counterforcountandhover';
 function App() {
   return (
     <div className="App">
@@ -50,7 +55,7 @@ function App() {
       <Ayiye naam="hamza" younger="Brother" /> */}
       {/* <Greet name="shahnawaz" heroName="Batman" /> */}
       {/* <Greet /> */}
-       <Welcome name = "Hamza" heroName="Superman"/>
+      <Welcome name="Hamza" heroName="Superman" />
       {/* <Message />
       <Thought />
       <Counter /> */}
@@ -70,7 +75,7 @@ function App() {
       {/* <Tables /> */}
       {/* <Parentcomp /> */}
       {/* <MemoComp /> */}
-      <Practice1 naam = "romeo" herokanaam = "billu"/>
+      <Practice1 naam="romeo" herokanaam="billu" />
       {/* <Hello />
       <RefsDemo />
       <Focusinput />
@@ -80,6 +85,13 @@ function App() {
       <Clickcounter />
       <HoverCount />
       {/* <Componentone /> */}
+      {/* <ClickcounterTwo /> */}
+      <HovercounterTwo />
+      {/* <Hovering /> */}
+      <User render={(isLoggedIn) => isLoggedIn ? 'Rendered' : 'Guest'} />  
+      <Counterforcountandhover render = {(count , incrementCount) => <ClickcounterTwo count = {count} incrementCount = {incrementCount}/> }/>
+      <Counterforcountandhover render = {(count , incrementCount) => <Hovering count = {count} incrementCount = {incrementCount}/> }/>
+
     </div>
   );
 }
@@ -90,3 +102,5 @@ export default App;
 // As soon as we import the Greet Component we have to import it to our main App.js and use it as an html tag 
 // Class components : They can also recieve input as props and retun html code 
 // It can maintain some data private to that component 
+// The user component will make sure the user is logged in or not 
+
