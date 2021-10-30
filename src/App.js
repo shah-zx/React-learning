@@ -40,10 +40,14 @@ import HovercounterTwo from './components/HovercounterTwo'
 import Hovering from './components/Hovering';
 import User from './components/User'
 import Counterforcountandhover from './components/Counterforcountandhover';
+import Navbar from './components/Navbar';
+
 function App() {
   return (
     <div className="App">
-      {/*      <Greet name = "hamza" heroName = "Batman"/>  
+      {
+      <Navbar title="Infuzex-ventures" Abouttext = "About-us" cont = "Contact-us" hello = "work-here"/>  // Passing the props //
+      /*      <Greet name = "hamza" heroName = "Batman"/>  
       {/* <Greet name = ""  <Greet name = "shahnawaz" superName = "Superman"/>   
       <Greet name = "rahul" wonderName = "women"/>    
 
@@ -55,7 +59,7 @@ function App() {
       <Ayiye naam="hamza" younger="Brother" /> */}
       {/* <Greet name="shahnawaz" heroName="Batman" /> */}
       {/* <Greet /> */}
-      <Welcome name="Hamza" heroName="Superman" />
+      {/* <Welcome name="Hamza" heroName="Superman" /> */}
       {/* <Message />
       <Thought />
       <Counter /> */}
@@ -75,22 +79,22 @@ function App() {
       {/* <Tables /> */}
       {/* <Parentcomp /> */}
       {/* <MemoComp /> */}
-      <Practice1 naam="romeo" herokanaam="billu" />
+      {/* <Practice1 naam="romeo" herokanaam="billu" /> */}
       {/* <Hello />
       <RefsDemo />
       <Focusinput />
       <FRparentinput />
       <Portaldemo /> */}
-      <Practice2 />
-      <Clickcounter />
-      <HoverCount />
+      {/* <Practice2 /> */}
+      {/* <Clickcounter /> */}
+      {/* <HoverCount /> */}
       {/* <Componentone /> */}
       {/* <ClickcounterTwo /> */}
-      <HovercounterTwo />
+      {/* <HovercounterTwo /> */}
       {/* <Hovering /> */}
-      <User render={(isLoggedIn) => isLoggedIn ? 'Rendered' : 'Guest'} />  
-      <Counterforcountandhover render = {(count , incrementCount) => <ClickcounterTwo count = {count} incrementCount = {incrementCount}/> }/>
-      <Counterforcountandhover render = {(count , incrementCount) => <Hovering count = {count} incrementCount = {incrementCount}/> }/>
+      {/* <User render={(isLoggedIn) => isLoggedIn ? 'Rendered' : 'Guest'} />   */}
+      {/* <Counterforcountandhover render = {(count , incrementCount) => <ClickcounterTwo count = {count} incrementCount = {incrementCount}/> }/> */}
+      {/* <Counterforcountandhover render = {(count , incrementCount) => <Hovering count = {count} incrementCount = {incrementCount}/> }/> */}
 
     </div>
   );

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js refresher</title>
+    <script>
+
+        // Three types of variables : var , let , const //
+
+        "use strict" // Code ko kayde se leikhne ke liye hota hai.. //
+        // d = 98;
+        let a = 34;
+        let b = 'this is a string';
+        console.log(a);
+        console.log(b);
+        function hello() // This is a function 
+        { console.log('hello this is shahnawaz') }
+
+        // Object with key value pairs //
+        let obj = {
+            rv: 56,
+            ft: 75,
+            func: function myfunc(number) {
+                console.log('The number is :' + number)
+            }
+            // object can also contain function //
+        }
+        document.addEventListener("click", function click() {
+            console.log('Clicked');
+            // alert("Hello , there");   // Alert (Pop up)
+            let conf = confirm("Are you sure !!");  // Confirming the actual thing // // Will return true or false //
+            console.log(conf);
+        })
+        let arr = [22,33,55];
+        console.log(this);
+        let myobj  = {
+            a: this , 
+            func : (number) => {
+                console.log("The number is " + this)
+            }
+            
+        }
+        myobj.func();
+        setTimeout(() => {
+            console.log("Correct")} , 3000);  // Will come after a delay of 3 seconds //
+            console.log("This is the script under the previous script");
+
+        // Key value pairs //
+
+    </script>
+</head>
+
+<body>
+    <h1>Hello there , learning js</h1>
+</body>
+
+</html>
+

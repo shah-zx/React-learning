@@ -1,3 +1,18 @@
 {
-    "terminal.integrated.tabs.location": "left"
+    "terminal.integrated.tabs.location": "left",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "askForPassword": true,
+            "driver": "MySQL",
+            "name": "localhost",
+            "database": "mydata",
+            "username": "root"
+        }
+    ]
 }
