@@ -41,16 +41,17 @@ import Hovering from './components/Hovering';
 import User from './components/User'
 import Counterforcountandhover from './components/Counterforcountandhover';
 import Navbar from './components/Navbar';
-
+import TextForm from './components/TextForm';
 function App() {
   return (
     <div className="App">
       {
-      <Navbar title="Infuzex-ventures" Abouttext = "About-us" cont = "Contact-us" hello = "work-here"/>  // Passing the props //
+      <Navbar title = "Infuzex" Abouttext = "Home" cont = "contact-us" hello = "go"/> 
+       // Passing the props //
       /*      <Greet name = "hamza" heroName = "Batman"/>  
       {/* <Greet name = ""  <Greet name = "shahnawaz" superName = "Superman"/>   
       <Greet name = "rahul" wonderName = "women"/>    
-
+      
       {/*<Welcome />  
       <Swagat />
       <Namaste />
@@ -95,7 +96,9 @@ function App() {
       {/* <User render={(isLoggedIn) => isLoggedIn ? 'Rendered' : 'Guest'} />   */}
       {/* <Counterforcountandhover render = {(count , incrementCount) => <ClickcounterTwo count = {count} incrementCount = {incrementCount}/> }/> */}
       {/* <Counterforcountandhover render = {(count , incrementCount) => <Hovering count = {count} incrementCount = {incrementCount}/> }/> */}
-
+      <div className="container" >
+      <TextForm heading = "Enter the text to see :"/>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Navbar from './Navbar'
+
 
 class Input extends Component {
     constructor(props) {
@@ -21,3 +23,5 @@ class Input extends Component {
 }
 
 export default Input
+
+                     
