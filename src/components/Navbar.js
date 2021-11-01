@@ -2,21 +2,22 @@
 
 import React from 'react'
 import PropTypes from 'prop-types' // Importing the proptypes from props //
+import {Link} from 'react-router-dom' // Importing the Link //
 export default function Navbar(props) {
 
     return (
         <ul className="nav">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">{props.title}</a>
+          <Link className="nav-link active" aria-current="page" to="/">{props.title}</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">{props.Abouttext}</a>
+          <Link className="nav-link" to="about">{props.Abouttext}</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">{props.cont}</a>
+          <Link className="nav-link" to="/">{props.cont}</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link disabled">{props.hello}</a>
+          <a className="nav-link">{props.hello}</a>
         </li>
       </ul>
     )

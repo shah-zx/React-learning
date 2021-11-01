@@ -1,19 +1,21 @@
 import React, { useState } from 'react'
 
+
 export default function TextForm(props) {
 
     const handleUpClick = () => {
         console.log("Uppercase was clicked " + text);
         let newText = text.slice(2, 8);
         setText(newText);
-    }   
-    
+    }
+
     // This is our handleUpClick() function whose work is to slice the string //
 
     const handleUp2Click = () => {
         console.log("You clicked the blue button " + text);
         let newT = text.toUpperCase();
         setText(newT);
+        props.showAlert("The text has been transformed into uppercase" , "success"); // This is a success message and is implemented using App.js //
     }
 
     // This is the function for making the text uppercase //
@@ -27,8 +29,15 @@ export default function TextForm(props) {
         console.log("You clicked handleUp3click " + text);
         const newTT = text.toLowerCase();
         setText(newTT);
-    }
+        props.showAlert("The text has been transformed into lowercase" , "success");
 
+    }
+    const handleInfo = () => {
+        const naya = text.substring(3, 8);
+        setText(naya);
+        props.showAlert("The text has been sliced" , "success");
+
+    }
     // const handleUp4Click = () => {
     //     console.log("You clicked handleUp4click " + text);
     //     setText(text);
@@ -41,24 +50,27 @@ export default function TextForm(props) {
 
     return (
         <>
-        <div>
-            <h1>{props.heading}</h1>
-            <div class="mb-3">
-                <textarea className="form-control" value={text} onChange={handleOnChange} placeholder="Leave a comment here" id="floatingTextarea2" style={{ height: "100px" }}></textarea>
-            </div>
-            <button className="btn btn-danger mx-1" onClick={handleUpClick}>slice it up !!</button>
-            <button className="btn btn-primary mx-1" onClick={handleUp2Click}>convert to Uppercase</button>
-            <button className="btn btn-success mx-1" onClick={handleUp3Click}>convert to lowercase</button>
-            {/* <hr />
+            <div>
+                <h1>{props.heading}</h1>
+                <div class="mb-3">
+                    <textarea className="form-control" value={text} onChange={handleOnChange} placeholder="Leave a comment here" id="floatingTextarea2" style={{ height: "100px" }}></textarea>
+                </div>
+                <button className="btn btn-danger mx-1" onClick={handleUpClick}>slice it up !!</button>
+                <button className="btn btn-primary mx-1" onClick={handleUp2Click}>convert to Uppercase</button>
+                <button className="btn btn-success mx-1" onClick={handleUp3Click}>convert to lowercase</button>
+                <button className="btn btn-info mx-1" onClick={handleInfo}>substring</button>
+
+                {/* <hr />
             <button className="btn btn-secondary" onClick={handleUp4Click}>back to normal</button> */}
-        </div>
-        <div className="container my-3">
-           <h1>Your text summary</h1>
-           <p>{text.split(" ").length} words and {text.length} characters</p>
-           <p>This text taken this much of time : {0.008 * text.split(" ").length}</p>
-           <h2>Preview</h2>
-           <p>{text}</p>
-        </div>
+
+            </div>
+            <div className="container my-3">
+                <h1>Your text summary</h1>
+                <p>{text.split(" ").length} words and {text.length} characters</p>
+                <p>This text taken this much of time : {0.008 * text.split(" ").length}</p>
+                <h2>Preview</h2>
+                <p>{text}</p>
+            </div>
 
         </>
     )

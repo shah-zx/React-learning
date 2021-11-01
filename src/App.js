@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
 import Greet from './components/Greet'
 import Welcome from './components/Welcome'
 import Swagat from './components/Swagat'
@@ -42,11 +43,37 @@ import User from './components/User'
 import Counterforcountandhover from './components/Counterforcountandhover';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
+import About from './components/About';
+import Alert from './components/Alert';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+
+} from "react-router-dom";
 function App() {
+  // const [darkMode , setDarkMode] = useState(false)  // Wether dark mode is enabled or disabled //
+  const [alert, setAlert] = useState(null);  // This is used for setting the state //
+  const showAlert = (message, type) => {    // This is for showing the alert 
+
+    setAlert({
+      msg: message,
+      type: type
+    })
+    setTimeout(() => {  // This will help us to fade out the text message after 2 seconds //
+      setAlert(null);
+    }, 2000);
+  }
+
   return (
+    <>
+    <Router>
+    
     <div className="App">
       {
-      <Navbar title = "Infuzex" Abouttext = "Home" cont = "contact-us" hello = "go"/> 
+
+        <Navbar title="Infuzex" Abouttext="Home" cont="contact-us" hello="go" />
        // Passing the props //
       /*      <Greet name = "hamza" heroName = "Batman"/>  
       {/* <Greet name = ""  <Greet name = "shahnawaz" superName = "Superman"/>   
@@ -96,10 +123,22 @@ function App() {
       {/* <User render={(isLoggedIn) => isLoggedIn ? 'Rendered' : 'Guest'} />   */}
       {/* <Counterforcountandhover render = {(count , incrementCount) => <ClickcounterTwo count = {count} incrementCount = {incrementCount}/> }/> */}
       {/* <Counterforcountandhover render = {(count , incrementCount) => <Hovering count = {count} incrementCount = {incrementCount}/> }/> */}
-      <div className="container" >
-      <TextForm heading = "Enter the text to see :"/>
+      {/* <Alert alert={alert} /> */}
+      <div className="container my-3" >
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/">
+          <TextForm showAlert={showAlert} heading="Enter the text to see :" />
+          </Route>
+        </Switch>
+        {/* <About /> */}
       </div>
-    </div>
+      {/* <About /> */}
+      </div>
+    </Router>
+    </>
   );
 }
 
