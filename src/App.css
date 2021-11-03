@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+.red_card {
+  display: flex;
+  flex-wrap: wrap;
+}

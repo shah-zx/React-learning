@@ -52,6 +52,7 @@ import {
   Link
 
 } from "react-router-dom";
+import One from './practice_components/One';
 function App() {
   // const [darkMode , setDarkMode] = useState(false)  // Wether dark mode is enabled or disabled //
   const [alert, setAlert] = useState(null);  // This is used for setting the state //
@@ -68,12 +69,12 @@ function App() {
 
   return (
     <>
-    <Router>
-    
-    <div className="App">
-      {
+      <Router>
 
-        <Navbar title="Infuzex" Abouttext="Home" cont="contact-us" hello="go" />
+        <div className="App">
+          {
+
+            <Navbar title="Infuzex" Abouttext="Home" cont="contact-us" hello="go" />
        // Passing the props //
       /*      <Greet name = "hamza" heroName = "Batman"/>  
       {/* <Greet name = ""  <Greet name = "shahnawaz" superName = "Superman"/>   
@@ -85,59 +86,64 @@ function App() {
       <Hello />
       <Ayiye naam="shahnawaz" elder="Brother" />
       <Ayiye naam="hamza" younger="Brother" /> */}
-      {/* <Greet name="shahnawaz" heroName="Batman" /> */}
-      {/* <Greet /> */}
-      {/* <Welcome name="Hamza" heroName="Superman" /> */}
-      {/* <Message />
+          {/* <Greet name="shahnawaz" heroName="Batman" /> */}
+          {/* <Greet /> */}
+          {/* <Welcome name="Hamza" heroName="Superman" /> */}
+          {/* <Message />
       <Thought />
       <Counter /> */}
-      {/* <ParentComponent /> */}
-      {/* <Functionalclick /> */}
-      {/* <Eventbind /> */}
-      {/* <CoditionalRendering /> */}
-      {/* <Namelist />  */}
-      {/* <Indexaskeyantipattern /> */}
-      {/* <Stylesheet primary = {true} />
+          {/* <ParentComponent /> */}
+          {/* <Functionalclick /> */}
+          {/* <Eventbind /> */}
+          {/* <CoditionalRendering /> */}
+          {/* <Namelist />  */}
+          {/* <Indexaskeyantipattern /> */}
+          {/* <Stylesheet primary = {true} />
       <Inline />
       <h1 className='error'>Error</h1>
       <h1 className={styles.success}>Success</h1>
       <Form /> */}
-      {/* <Purecomponents /> */}
-      {/* <Fragments /> */}
-      {/* <Tables /> */}
-      {/* <Parentcomp /> */}
-      {/* <MemoComp /> */}
-      {/* <Practice1 naam="romeo" herokanaam="billu" /> */}
-      {/* <Hello />
+          {/* <Purecomponents /> */}
+          {/* <Fragments /> */}
+          {/* <Tables /> */}
+          {/* <Parentcomp /> */}
+          {/* <MemoComp /> */}
+          {/* <Practice1 naam="romeo" herokanaam="billu" /> */}
+          {/* <Hello />
       <RefsDemo />
       <Focusinput />
       <FRparentinput />
       <Portaldemo /> */}
-      {/* <Practice2 /> */}
-      {/* <Clickcounter /> */}
-      {/* <HoverCount /> */}
-      {/* <Componentone /> */}
-      {/* <ClickcounterTwo /> */}
-      {/* <HovercounterTwo /> */}
-      {/* <Hovering /> */}
-      {/* <User render={(isLoggedIn) => isLoggedIn ? 'Rendered' : 'Guest'} />   */}
-      {/* <Counterforcountandhover render = {(count , incrementCount) => <ClickcounterTwo count = {count} incrementCount = {incrementCount}/> }/> */}
-      {/* <Counterforcountandhover render = {(count , incrementCount) => <Hovering count = {count} incrementCount = {incrementCount}/> }/> */}
-      {/* <Alert alert={alert} /> */}
-      <div className="container my-3" >
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/">
-          <TextForm showAlert={showAlert} heading="Enter the text to see :" />
-          </Route>
-        </Switch>
-        {/* <About /> */}
-      </div>
-      {/* <About /> */}
-      </div>
-    </Router>
+          {/* <Practice2 /> */}
+          {/* <Clickcounter /> */}
+          {/* <HoverCount /> */}
+          {/* <Componentone /> */}
+          {/* <ClickcounterTwo /> */}
+          {/* <HovercounterTwo /> */}
+          {/* <Hovering /> */}
+          {/* <User render={(isLoggedIn) => isLoggedIn ? 'Rendered' : 'Guest'} />   */}
+          {/* <Counterforcountandhover render = {(count , incrementCount) => <ClickcounterTwo count = {count} incrementCount = {incrementCount}/> }/> */}
+          {/* <Counterforcountandhover render = {(count , incrementCount) => <Hovering count = {count} incrementCount = {incrementCount}/> }/> */}
+          {/* <Alert alert={alert} /> */}
+          <div className="container my-3" >
+            <Switch>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/">
+                <TextForm showAlert={showAlert} heading="Enter the text to see :" />
+                <div className="red_card">
+                <One />
+                <One />
+                <One />
+                </div>
+              </Route>
+            </Switch>
+            {/* <About /> */}
+          </div>
+          {/* <About /> */}
+        </div>
+      </Router>
     </>
   );
 }

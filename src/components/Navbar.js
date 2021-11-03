@@ -2,7 +2,7 @@
 
 import React from 'react'
 import PropTypes from 'prop-types' // Importing the proptypes from props //
-import {Link} from 'react-router-dom' // Importing the Link //
+import {Link} from 'react-router-dom' // Importing the Link  , thing to remember : exporting not as DEFAULT //
 export default function Navbar(props) {
 
     return (
