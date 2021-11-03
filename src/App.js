@@ -134,8 +134,6 @@ function App() {
                 <TextForm showAlert={showAlert} heading="Enter the text to see :" />
                 <div className="red_card">
                 <One />
-                <One />
-                <One />
                 </div>
               </Route>
             </Switch>
@@ -148,7 +146,7 @@ function App() {
   );
 }
 
-export default App;
+export default App;  // This is the place where we have exported our App //
 
 // Functional components : takes properties ( a js function takes the props and returns the jsx code --> HTML code )
 // As soon as we import the Greet Component we have to import it to our main App.js and use it as an html tag 

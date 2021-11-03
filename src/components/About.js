@@ -55,7 +55,7 @@ export default function About() {  // theme provider //
             }
         }
 
-        // This is for red mode //////////////////////////////////
+        // This is for red mode //
 
         const [prMsg , neMsg] = useState("Enable red mode")
         
