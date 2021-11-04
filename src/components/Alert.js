@@ -8,4 +8,4 @@ function Alert(props) {
     )
 }
 
-export default Alert
+export default Alert 

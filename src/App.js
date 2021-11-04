@@ -53,6 +53,7 @@ import {
 
 } from "react-router-dom";
 import One from './practice_components/One';
+import Alert_pr from './practice_components/Alert_pr';
 function App() {
   // const [darkMode , setDarkMode] = useState(false)  // Wether dark mode is enabled or disabled //
   const [alert, setAlert] = useState(null);  // This is used for setting the state //
@@ -124,7 +125,10 @@ function App() {
           {/* <User render={(isLoggedIn) => isLoggedIn ? 'Rendered' : 'Guest'} />   */}
           {/* <Counterforcountandhover render = {(count , incrementCount) => <ClickcounterTwo count = {count} incrementCount = {incrementCount}/> }/> */}
           {/* <Counterforcountandhover render = {(count , incrementCount) => <Hovering count = {count} incrementCount = {incrementCount}/> }/> */}
-          {/* <Alert alert={alert} /> */}
+          <Alert alert={alert} />
+          <div className="alert">
+          <Alert_pr showAlert = {showAlert} />
+          </div>
           <div className="container my-3" >
             <Switch>
               <Route path="/about">
