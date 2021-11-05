@@ -4,17 +4,12 @@ require("./db/connection")  // For checking wether the mogodb database is connec
 const port  = process.env.PORT || 8000;
 
 
-app.use(express.json());  // This is used for coverting the data into the json format // 
-// Important thing about the above stated : It helps in getting the body through req.body in th terminal  , rather than guiving undefined //
-
-
 // app.get("/" , (req , res) => {    // This is one of the endpoint //
 //     res.send("Hello there , app listening here !!")
 // })
 
 app.use('/api/auth' , require('../routes/auth'))
 app.use('/api/notes' , require('../routes/notes'))
-
 
 
 
@@ -29,6 +24,9 @@ app.use('/api/notes' , require('../routes/notes'))
 
 
 
+
+app.use(express.json());  // This is used for coverting the data into the json format // 
+// Important thing about the above stated : It helps in getting the body through req.body in th terminal  , rather than guiving undefined //
 
 
 app.listen(port , () => {
