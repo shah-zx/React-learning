@@ -54,6 +54,7 @@ import {
 } from "react-router-dom";
 import One from './practice_components/One';
 import Alert_pr from './practice_components/Alert_pr';
+import Footer from './components/Footer';
 function App() {
   // const [darkMode , setDarkMode] = useState(false)  // Wether dark mode is enabled or disabled //
   const [alert, setAlert] = useState(null);  // This is used for setting the state //
@@ -127,7 +128,7 @@ function App() {
           {/* <Counterforcountandhover render = {(count , incrementCount) => <Hovering count = {count} incrementCount = {incrementCount}/> }/> */}
           <Alert alert={alert} />
           <div className="alert">
-          <Alert_pr showAlert = {showAlert} />
+            <Alert_pr showAlert={showAlert} />
           </div>
           <div className="container my-3" >
             <Switch>
@@ -137,7 +138,10 @@ function App() {
               <Route path="/">
                 <TextForm showAlert={showAlert} heading="Enter the text to see :" />
                 <div className="red_card">
-                <One />
+                  <One />
+                  <div className="container">
+                    <Footer heading = "Footer" link1 = "Facebook" ls = "Twitter" oneLink = "Instagram" secLink = "LinkedIn"/>
+                  </div>
                 </div>
               </Route>
             </Switch>

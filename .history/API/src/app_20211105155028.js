@@ -4,8 +4,8 @@ require("./db/connection")  // For checking wether the mogodb database is connec
 const port  = process.env.PORT || 8000;
 
 
-app.get("/" , (req , res) => {    // This is one of the endpoint //
-    res.send("Hello there , app listening here !!")
+app.get("/" , (req , res) => {
+    res.send("Hello there , created successfuly !!")
 })
 
 app.use(express.json());  // This is used for coverting the data into the json format //
