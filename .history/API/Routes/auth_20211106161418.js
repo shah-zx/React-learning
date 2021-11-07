@@ -10,7 +10,7 @@ router.post('/', [  // Giving the validations in an array //
     body('email', 'Enter a valid email').isEmail(),
     body('password', 'Enter a valid password').isLength({ min: 5 })
 ],
-  async (req, res) => {
+  async   (req, res) => {
 
         console.log(req.body)     // This is all for validation //
         const errors = validationResult(req);   

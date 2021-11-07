@@ -17,13 +17,12 @@ router.post('/', [  // Giving the validations in an array //
         if (!errors.isEmpty()) {
             return res.status(400).json({ errors: errors.array() }); 
         }
-        
-    const user = User(req.body);
-    await user.save()
-    res.send(req.body);
 
-
-       
+        User.create({
+            name : req.body.name,
+            password : req.body.password , 
+            email : req.body.email
+        }).then((user => res.json(user)).catch(err=> console.log(err))
 
     })
 
@@ -47,9 +46,3 @@ module.exports = router
 
 // })
 
-// User.create({
-//     name : req.body.name,
-//     password : req.body.password , 
-//     email : req.body.email , 
-// }).then((user => res.json(user)).catch(err=> {console.log(err)
-//     res.json({error : 'Please enter valid email'})
