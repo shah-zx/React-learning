@@ -12,7 +12,7 @@ function Footer(props) {
                     <div class="col-md-6 mt-md-0 mt-3">
 
                         <h5 class="text-uppercase">{props.heading}</h5>
-                        <p>{b.name} Here you can use rows and columns to organize your footer content.</p>
+                        <p>{b.name}Here you can use rows and columns to organize your footer content.</p>
 
                     </div>
 

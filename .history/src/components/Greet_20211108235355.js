@@ -7,7 +7,7 @@ const Greet = () => {
     }, [])
     return (
         <div>
-            This is about {a.state.name}
+            This is about {a.name}
             <br />
             This is his class : {a.state.class}
         </div>  // Here we are using the context API

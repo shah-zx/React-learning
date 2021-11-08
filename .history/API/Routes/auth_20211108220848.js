@@ -15,7 +15,7 @@ router.post('/', [  // Giving the validations in an array //
         console.log(req.body)     // This is all for validation //
         const errors = validationResult(req);   
         if (!errors.isEmpty()) {
-            return res.status(400).json({ errors: errors.array()}); 
+            return res.status(400).json({ errors: errors.array() }); 
         }
         
     const user = User(req.body);

@@ -56,7 +56,6 @@ import One from './practice_components/One';
 import Alert_pr from './practice_components/Alert_pr';
 import Footer from './components/Footer';
 import Textarea from './practice_components/Textarea';
-import NotesState from '../src/context/notes/NotesState'
 function App() {
   // const [darkMode , setDarkMode] = useState(false)  // Wether dark mode is enabled or disabled //
   const [alert, setAlert] = useState(null);  // This is used for setting the state //
