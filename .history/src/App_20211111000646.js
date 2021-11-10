@@ -58,7 +58,6 @@ import Footer from './components/Footer';
 import Textarea from './practice_components/Textarea';
 import NotesState from '../src/context/notes/NotesState'
 import Hooks from './practice_components/Hooks';
-import Time from './practice_components/Time';
 function App() {
   // const [darkMode , setDarkMode] = useState(false)  // Wether dark mode is enabled or disabled //
   const [alert, setAlert] = useState(null);  // This is used for setting the state //
@@ -131,8 +130,6 @@ function App() {
           {/* <User render={(isLoggedIn) => isLoggedIn ? 'Rendered' : 'Guest'} />   */}
           {/* <Counterforcountandhover render = {(count , incrementCount) => <ClickcounterTwo count = {count} incrementCount = {incrementCount}/> }/> */}
           {/* <Counterforcountandhover render = {(count , incrementCount) => <Hovering count = {count} incrementCount = {incrementCount}/> }/> */}
-          <Hooks/>
-          <Time />
           <Alert alert={alert} />
           <div className="alert">
             <Alert_pr showAlert={showAlert} />
@@ -144,6 +141,7 @@ function App() {
             <Switch>
               <Route path="/about">
                 <About />
+                <Hooks/>
                 {/* <Ayiye/> */}
               </Route>
               <Route path="/">
