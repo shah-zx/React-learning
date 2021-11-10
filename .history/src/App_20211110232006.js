@@ -79,7 +79,7 @@ function App() {
         <div className="App">
           {
 
-            <Navbar title= "🍔" Abouttext="Home" cont="contact-us" hello="go" />
+            <Navbar title="Infuzex" Abouttext="Home" cont="contact-us" hello="go" />
        // Passing the props //
       /*      <Greet name = "hamza" heroName = "Batman"/>  
       {/* <Greet name = ""  <Greet name = "shahnawaz" superName = "Superman"/>   
@@ -140,7 +140,7 @@ function App() {
             <Switch>
               <Route path="/about">
                 <About />
-                {/* <Ayiye/> */}
+                <Ayiye />
               </Route>
               <Route path="/">
                 <TextForm showAlert={showAlert} heading="Enter the text to see :" />

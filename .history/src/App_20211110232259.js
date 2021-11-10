@@ -79,7 +79,7 @@ function App() {
         <div className="App">
           {
 
-            <Navbar title= "🍔" Abouttext="Home" cont="contact-us" hello="go" />
+            <Navbar title= "🥇" Abouttext="Home" cont="contact-us" hello="go" />
        // Passing the props //
       /*      <Greet name = "hamza" heroName = "Batman"/>  
       {/* <Greet name = ""  <Greet name = "shahnawaz" superName = "Superman"/>   
