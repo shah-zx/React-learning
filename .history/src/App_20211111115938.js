@@ -60,7 +60,6 @@ import NotesState from '../src/context/notes/NotesState'
 import Hooks from './practice_components/Hooks';
 import Time from './practice_components/Time';
 import Dclock from './practice_components/Dclock';
-import Handlingevents from './practice_components/Handlingevents'
 function App() {
   // const [darkMode , setDarkMode] = useState(false)  // Wether dark mode is enabled or disabled //
   const [alert, setAlert] = useState(null);  // This is used for setting the state //
