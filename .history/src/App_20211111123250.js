@@ -137,7 +137,7 @@ function App() {
           {/* <Hooks/>
           <Time /> */}
           <Forms/>
-          {/* <Handlingevents /> */}
+          <Handlingevents />
           <Dclock/>
           <Alert alert={alert} />
           <div className="alert">
