@@ -15,7 +15,7 @@ function Dclock() {
 
     return (
         <>
-            <h3 className = "time" style={{color : "blue" , fontSize : "20px"}}>{ctime}</h3>
+            <h3 style={{color : "blue"}}>{ctime}</h3>
         </>
     )
 }

@@ -3,17 +3,16 @@ import React ,{useState} from 'react'
 function App() {
     
 
+    const [name ,setName] = useState("")
     const [liText , setliText] = useState("")
-    const [lists , setList] = useState([])
+
     const handleChange = (event) => {
-        
         // console.log(event.target.value)
         setliText(event.target.value)
     }
     const handleClick = (event) => {
-        setList([...lists , liText])   // Here we are providing the array with the strings (i.e , lists is the arrayand litext is the item)
         console.log("clicked")
-        setliText(event.target.value)
+        setName(name)
     }
 
     return (
@@ -22,12 +21,10 @@ function App() {
             <br />
             <h1>Todo List</h1>
             <br />
-            <input type="text" className="" placeholder = "Add an Item" onChange={handleChange}/>
+            <input type="text" className="" placeholder = "Add an Item" onChange = {handleChange} name = "fname"/>
             <button onClick = {handleClick}> + </button>
             <ol>
-            {lists.map(li => {
-                return <li>{li}</li>
-            })}
+                <li>{liText}</li>
             </ol>
         </div>
             

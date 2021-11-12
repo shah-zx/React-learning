@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: rgb(160, 49, 49);
 }
 
 .App-logo {
@@ -48,5 +47,5 @@
   margin-top: 2em;
 }
 .time{
-  font-weight: 200;
+  display: flex;
 }

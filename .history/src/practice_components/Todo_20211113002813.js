@@ -3,6 +3,7 @@ import React ,{useState} from 'react'
 function App() {
     
 
+    const [name ,setName] = useState("")
     const [liText , setliText] = useState("")
     const [lists , setList] = useState([])
     const handleChange = (event) => {
@@ -11,7 +12,7 @@ function App() {
         setliText(event.target.value)
     }
     const handleClick = (event) => {
-        setList([...lists , liText])   // Here we are providing the array with the strings (i.e , lists is the arrayand litext is the item)
+        setList([...lists , liText])
         console.log("clicked")
         setliText(event.target.value)
     }

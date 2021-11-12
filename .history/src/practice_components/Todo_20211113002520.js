@@ -3,6 +3,7 @@ import React ,{useState} from 'react'
 function App() {
     
 
+    const [name ,setName] = useState("")
     const [liText , setliText] = useState("")
     const [lists , setList] = useState([])
     const handleChange = (event) => {
@@ -11,8 +12,9 @@ function App() {
         setliText(event.target.value)
     }
     const handleClick = (event) => {
-        setList([...lists , liText])   // Here we are providing the array with the strings (i.e , lists is the arrayand litext is the item)
+        setList([...lists , liText])
         console.log("clicked")
+        console.log(liText)
         setliText(event.target.value)
     }
 
@@ -22,11 +24,11 @@ function App() {
             <br />
             <h1>Todo List</h1>
             <br />
-            <input type="text" className="" placeholder = "Add an Item" onChange={handleChange}/>
+            <input type="text" className="" placeholder = "Add an Item"/>
             <button onClick = {handleClick}> + </button>
             <ol>
             {lists.map(li => {
-                return <li>{li}</li>
+                return `<li>${li}</li>`
             })}
             </ol>
         </div>
