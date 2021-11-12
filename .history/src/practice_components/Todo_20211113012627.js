@@ -26,7 +26,7 @@ function App() {
             <button onClick = {handleClick}> + </button>
             <ol>
             {lists.map(li => {
-               return <Todolist text = {li}/>
+                <Todolist />
             })}
             </ol>
         </div>
