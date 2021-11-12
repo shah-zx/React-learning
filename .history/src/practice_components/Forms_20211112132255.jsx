@@ -20,7 +20,7 @@ function Forms() {
 
 
     const handleChange = () => {
-        // setFullName(name);
+        setFullName(name);
     }
     return (
         <>

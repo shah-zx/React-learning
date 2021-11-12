@@ -17,6 +17,8 @@ function Login() {
   }
 
   const handleThat = (event) => {
+    console.log(event.target.value)
+    // console.log(event.target.name)
     setName(event.target.value);
   }
 

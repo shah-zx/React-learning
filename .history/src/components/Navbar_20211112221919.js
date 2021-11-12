@@ -21,10 +21,8 @@ export default function Navbar(props) {
         <li className="nav-item">
           <a className="nav-link">{props.hello}</a>
         </li>
-        <li>
+      </ul>  // Hello there 
       <Dclock/>
-        </li>
-      </ul> 
       </>
     )
 }

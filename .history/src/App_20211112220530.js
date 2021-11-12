@@ -140,9 +140,10 @@ function App() {
           <Time /> */}
           <Forms/>
           {/* <Handlingevents /> */}
+          <Dclock/>
           <Login />
           <Todo />
-          <Alert alert={alert} /> 
+          <Alert alert={alert} />
           {/* <div className="alert">
             <Alert_pr showAlert={showAlert} />
           </div>

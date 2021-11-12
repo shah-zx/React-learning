@@ -6,7 +6,7 @@ function Login() {
 
   const [lastName, setLastName] = useState("");
 
-  const [fullName, setfullName] = useState("")
+  const [fullName, setfullName] = useState()
 
   const [lastNamenew , setlastNamenew] = useState("")
 
@@ -17,6 +17,8 @@ function Login() {
   }
 
   const handleThat = (event) => {
+    console.log(event.target.value)
+    // console.log(event.target.name)
     setName(event.target.value);
   }
 

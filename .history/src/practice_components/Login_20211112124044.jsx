@@ -6,17 +6,18 @@ function Login() {
 
   const [lastName, setLastName] = useState("");
 
-  const [fullName, setfullName] = useState("")
+  const [fullName, setfullName] = useState()
 
   const [lastNamenew , setlastNamenew] = useState("")
 
   const onSubmits = (event) => {
     event.preventDefault();  // This will help in preventing the default behaviour of the form 
     setfullName(name)
-    setlastNamenew(lastName)
   }
 
   const handleThat = (event) => {
+    console.log(event.target.value)
+    // console.log(event.target.name)
     setName(event.target.value);
   }
 

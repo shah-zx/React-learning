@@ -20,13 +20,13 @@ function Forms() {
 
 
     const handleChange = () => {
-        // setFullName(name);
+        setFullName(name);
     }
     return (
         <>
         <div className="main_div">
         <form onSubmit = {onSubmits}>
-            <h1>Hello {fullName.fname} {fullName.lname}</h1>
+            <h1>Hello</h1>
             <input type="text"
                 placeholder="Type here"
                 value={fullName.fname}

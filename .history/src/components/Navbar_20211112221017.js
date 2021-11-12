@@ -7,7 +7,6 @@ import Dclock from '../practice_components/Dclock'
 export default function Navbar(props) {
 
     return (
-      <>
         <ul className="nav">
         <li className="nav-item">
           <Link className="nav-link active" aria-current="page" to="/">{props.title}</Link>
@@ -21,11 +20,8 @@ export default function Navbar(props) {
         <li className="nav-item">
           <a className="nav-link">{props.hello}</a>
         </li>
-        <li>
-      <Dclock/>
-        </li>
-      </ul> 
-      </>
+        <Dclock/>
+      </ul>
     )
 }
 Navbar.propTypes = {      // These are our navbar properties //

@@ -6,17 +6,17 @@ function Login() {
 
   const [lastName, setLastName] = useState("");
 
-  const [fullName, setfullName] = useState("")
+  const [fullName, setfullName] = useState()
 
-  const [lastNamenew , setlastNamenew] = useState("")
 
   const onSubmits = (event) => {
     event.preventDefault();  // This will help in preventing the default behaviour of the form 
     setfullName(name)
-    setlastNamenew(lastName)
   }
 
   const handleThat = (event) => {
+    console.log(event.target.value)
+    // console.log(event.target.name)
     setName(event.target.value);
   }
 
@@ -28,7 +28,7 @@ function Login() {
     <>
       <div className="main_div">
         <form onSubmit={onSubmits}>
-          <h1>Hello {fullName} {lastNamenew}</h1>
+          <h1>Hello {fullName}</h1>
           <input
             onChange={handleThat}
             type="text"
@@ -40,6 +40,7 @@ function Login() {
           type = "text" 
           onChange = {handleThattwo}
           placeholder = "type your last name"
+          name = "lname" 
           value = {lastName}>
           </input>
           <button type="submit">Submit</button>
