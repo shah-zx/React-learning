@@ -64,7 +64,7 @@ import Handlingevents from './practice_components/Handlingevents'
 import Forms from './practice_components/Forms';
 import Login from './practice_components/Login';
 import Todo from './practice_components/Todo'
-import Count from './components/Count';
+import Count from './practice_components/Count';
 function App() {
   // const [darkMode , setDarkMode] = useState(false)  // Wether dark mode is enabled or disabled //
   const [alert, setAlert] = useState(null);  // This is used for setting the state //
