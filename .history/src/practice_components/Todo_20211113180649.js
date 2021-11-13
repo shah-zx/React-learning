@@ -9,7 +9,7 @@ function App() {
 
     const deleteItems = (id) => {
         console.log("deleted")
-        setList((lists) => {
+        setItems((lists) => {
             return lists.filter((arrElem , index) => {
              return index !== id
             })

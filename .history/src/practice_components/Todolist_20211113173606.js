@@ -5,16 +5,16 @@ function Todolist(props) {
     const deleteItems = () => {
         console.log('deleted')
     }
+
+
+    <>
     return (
         <div className="todolist">
-        <li>
-        <i className = "fa fa-times" aria-hidden = "true" onClick = {() => {
-            props.onSelect(props.id)
-        }} />
-        {props.text}</li>
+        <i class = "fa fa-times" aria-hidden = "true" onClick = {deleteItems} />
+        <li>{props.text}</li>
         </div>
         );
-        
+        </>
 }
 
 export default Todolist

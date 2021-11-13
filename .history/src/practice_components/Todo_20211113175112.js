@@ -7,13 +7,8 @@ function App() {
     const [liText , setliText] = useState("")
     const [lists , setList] = useState([])
 
-    const deleteItems = (id) => {
+    const deleteItems = () => {
         console.log("deleted")
-        setList((lists) => {
-            return lists.filter((arrElem , index) => {
-             return index !== id
-            })
-        })
     }
 
     const handleChange = (event) => {
@@ -35,12 +30,12 @@ function App() {
             <input type="text" className="" placeholder = "Add an Item" onChange={handleChange}/>
             <button onClick = {handleClick}> + </button>
             <ol>
-            {lists.map((li , index) => {
+            {lists.map(li , index => {
                return <Todolist 
                key = {index}
                id = {index}
                text = {li}
-               onSelect = {deleteItems}
+                onSelect = {deleteItems}
                />
             })}
             </ol>

@@ -8,9 +8,7 @@ function Todolist(props) {
     return (
         <div className="todolist">
         <li>
-        <i className = "fa fa-times" aria-hidden = "true" onClick = {() => {
-            props.onSelect(props.id)
-        }} />
+        <i className = "fa fa-times" aria-hidden = "true" onClick = {onSelect} />
         {props.text}</li>
         </div>
         );

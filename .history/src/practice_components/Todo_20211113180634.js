@@ -7,9 +7,9 @@ function App() {
     const [liText , setliText] = useState("")
     const [lists , setList] = useState([])
 
-    const deleteItems = (id) => {
+    const deleteItems = () => {
         console.log("deleted")
-        setList((lists) => {
+        setItems((lists) => {
             return lists.filter((arrElem , index) => {
              return index !== id
             })

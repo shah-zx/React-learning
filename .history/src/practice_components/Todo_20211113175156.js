@@ -7,13 +7,8 @@ function App() {
     const [liText , setliText] = useState("")
     const [lists , setList] = useState([])
 
-    const deleteItems = (id) => {
+    const deleteItems = () => {
         console.log("deleted")
-        setList((lists) => {
-            return lists.filter((arrElem , index) => {
-             return index !== id
-            })
-        })
     }
 
     const handleChange = (event) => {
@@ -40,7 +35,7 @@ function App() {
                key = {index}
                id = {index}
                text = {li}
-               onSelect = {deleteItems}
+                onSelect = {deleteItems}
                />
             })}
             </ol>
