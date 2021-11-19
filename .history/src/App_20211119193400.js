@@ -65,8 +65,7 @@ import Forms from './practice_components/Forms';
 import Login from './practice_components/Login';
 import Todo from './practice_components/Todo'
 import Count from './components/Count';
-import CountA from '../src/contextApi/CountA'
-import CountC from '../src/contextApi/CountC'
+import countA from '../src/contextApi/countA';
 function App() {
   // const [darkMode , setDarkMode] = useState(false)  // Wether dark mode is enabled or disabled //
   const [alert, setAlert] = useState(null);  // This is used for setting the state //
@@ -141,8 +140,7 @@ function App() {
           {/* <Counterforcountandhover render = {(count , incrementCount) => <Hovering count = {count} incrementCount = {incrementCount}/> }/> */}
           {/* <Hooks/>
           <Time /> */}
-          <CountA/>
-          <CountC/>
+          <countA />
           <Forms/>
           {/* <Handlingevents /> */}
           <Login />
