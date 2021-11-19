@@ -1,5 +1,5 @@
 import React from 'react'
-import FirstName from './Mycontext'
+import { FirstName } from './CountA'
 function CountC() {
     return (
         <>

@@ -1,5 +1,4 @@
 import React  from 'react'
-import CountC from './CountC'
 // import CountB from './CountB'
 import FirstName from './Mycontext'
 // const FirstName = React.createContext();
@@ -8,7 +7,7 @@ import FirstName from './Mycontext'
 function countA() {
     return (
         <FirstName.Provider value={"Shahnawaz"}>
-         <CountC /> 
+         <CountB /> 
       </FirstName.Provider>
     )
 }
