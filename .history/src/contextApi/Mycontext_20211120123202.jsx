@@ -5,4 +5,5 @@ const LastName = React.createContext()
 
 
 // export default Mycontext
-export default { FirstName , LastName }
+export default FirstName
+export default LastName

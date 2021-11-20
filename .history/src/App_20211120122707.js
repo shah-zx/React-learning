@@ -142,7 +142,7 @@ function App() {
           {/* <Hooks/>
           <Time /> */}
           {/* <CountA/> */}
-          <CountA/>
+          <CountC/>
           <Forms/>
           {/* <Handlingevents /> */}
           <Login />
