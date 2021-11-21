@@ -2,14 +2,14 @@ import React  , {useState} from 'react'
 
 function Hi() {
 
-    const [text , setText]  = useState("Hello shahnawaz")
+    const [text , setText]  = useState("")
     const handleChange = () => {
-         setText("How are you?")
+         setText()
     }
     return (
         <div>
            <h1>{text}</h1> 
-           <button onClick={handleChange}>Click 👍</button>
+           <button onClick={handleChange}></button>
         </div>
     )
 }

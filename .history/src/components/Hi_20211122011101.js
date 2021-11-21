@@ -9,7 +9,7 @@ function Hi() {
     return (
         <div>
            <h1>{text}</h1> 
-           <button onClick={handleChange}>Click 👍</button>
+           <button onClick={handleChange}></button>
         </div>
     )
 }

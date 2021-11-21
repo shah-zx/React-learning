@@ -68,7 +68,7 @@ import Count from './components/Count';
 import CountA from '../src/contextApi/CountA'
 import CountC from '../src/contextApi/CountC'
 import Search from './practice_components/Search';
-import Hi from './components/Hi'
+import Hi from './practice_components/Hi'
 function App() {
   // const [darkMode , setDarkMode] = useState(false)  // Wether dark mode is enabled or disabled //
   const [alert, setAlert] = useState(null);  // This is used for setting the state //
