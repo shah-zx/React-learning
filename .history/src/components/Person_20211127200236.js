@@ -11,5 +11,3 @@ return (
 }
 
 export default Person
-
-// Here we are exporting the Person file 
